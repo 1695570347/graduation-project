@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <!-- 需要用的样式导入 -->
+    <link rel="stylesheet" type="text/css" href="assets/waifu.css"/>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <title>my_project</title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but eui002 doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <script src="/live2dw/lib/L2Dwidget.min.js"></script>
+    <audio id="a1"></audio>
+    <div id="app">
+      <!-- 该处展示live2d模型 -->
+      <div class="waifu" style=" position:fixed;bottom:0;right:70px;">
+        <!-- 该处是对话框 -->
+          <div class="waifu-tips" style="width: 80%;"></div>
+          <!-- 该处是live2d -->
+          <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+          <!-- 该处是工具 -->
+          <div class="waifu-tool">
+              <!-- <span class="fui-home"><img src="./assets/image/zhuye.png" alt=""></span> -->
+              <span class="fui-chat"><img src="./assets/image/chat.png" alt=""></span>
+              <span class="fui-eye"><img src="./assets/image/role.png" alt=""></span>
+              <span class="fui-user"><img src="./assets/image/huanzhuang.png" alt=""></span>
+              <span class="fui-photo"><img src="./assets/image/paizhao.png" alt=""></span>
+              <span class="fui-info-circle"><img src="./assets/image/info.png" alt=""></span>
+              <span class="fui-cross"><img src="./assets/image/close.png" alt=""></span>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
